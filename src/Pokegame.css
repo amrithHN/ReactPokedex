@@ -1,0 +1,59 @@
+.Pokegame-title {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+}
+.Pokegame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 98vh;
+  margin-top: 10px;
+}
+
+.Pokegame-user-title {
+  margin: 10px;
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 1.5em;
+  text-align: center;
+  color: darkcyan;
+}
+
+.Pokegame-computer-title {
+  margin: 10px;
+  font-weight: normal;
+  font-size: 1.5em;
+  text-align: center;
+  color: chocolate;
+}
+
+.user-cards,
+.computer-cards {
+  display: grid;
+  justify-content: center;
+}
+
+@media screen and (min-width: 0) {
+  .user-cards,
+  .computer-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 500) {
+  .user-cards,
+  .computer-cards {
+    justify-items: center;
+  }
+}
+
+.scores {
+  font-size: large;
+  font-weight: normal;
+  color: lightcoral;
+  text-align: center;
+}
